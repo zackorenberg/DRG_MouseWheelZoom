@@ -1,12 +1,12 @@
 
 # Deep Rock Galactic Mouse Wheel Zoom
-Tired of your mouse wheel causing chaos in the heat of battle? One moment you’re trying to switch weapons, and the next you’re accidentally scrolling through your utility tools like a Greenbeard who can’t make up their mind. And don't even get me started on rebinded the terrain scanner controls—remapping it to buttons feels like trying to dig through solid rock with a pickaxe made of paper. It’s slow, clunky, and downright debilitating. By Karl, there has to be a better way!
+Tired of your mouse wheel causing chaos in the heat of battle? One moment you’re trying to switch weapons, and the next you’re accidentally scrolling through your utility tools like a Greenbeard who can’t make up their mind. And don't even get me started on rebinded terrain scanner controls—remapping it to buttons feels like trying to dig through solid rock with a pickaxe made of paper. It’s slow, clunky, and downright debilitating. By Karl, there has to be a better way!
 
 Enter this AutoHotkey script, your new best friend in the depths of Hoxxes IV. This script lets you remap your mouse wheel to switch between primary and secondary weapons (or anything else you fancy) **without sacrificing the smooth, glorious zoom functionality on the terrain scanner**. No more awkward button mashing to zoom in and out—just pure, unadulterated scrolling like nature intended.
 
 Here’s how it works:  
 - When the terrain scanner is open (using the trusty default `Tab` key), the script temporarily remaps your mouse wheel to the `,` (comma) and `.` (period) keys for zooming.  
-- Outside the map, your mouse wheel is free to do whatever you’ve remapped it to—switch weapons, throw flares, or even dance if that’s your thing.
+- Outside the map, your mouse wheel is free to do whatever you’ve remapped it to—switch weapons, throw flares, dance, jump, whatever.
 
 To make this magic happen, you’ll need to bind "Cycle Item Up / Zoom In" to `,` and "Cycle Item Down / Zoom Out" to `.` in DRG’s keybindings. Management insists it’s a small price to pay for not dying to a swarm of Glyphids because you accidentally pulled out your grappling hook instead of your minigun.
 
@@ -60,7 +60,7 @@ If you want to create a standalone executable with the DRG icon for easy launchi
 ## Usage
 
 ### For Steam Users (Automatic Launch)
-1. Double-click `DRG_Remap.ahk` (or `DeepRockGalactic_ScrollWheelFix.exe`) to run the script.
+1. Double-click `DRG_ScrollWheelMapZoom_Remap.ahk` (or `DeepRockGalactic_ScrollWheelFix.exe`) to run the script.
 2. The script will:
    - Launch DRG via Steam if the game is not already running.
    - Focus and maximize the DRG window if the game is running.
@@ -72,6 +72,22 @@ If you want to create a standalone executable with the DRG icon for easy launchi
 2. The script will:
    - Remap the mouse wheel to `,` and `.` while pressing `Tab` for zooming on the terrain scanner.
 3. Manually close the script when you are done playing DRG.
+
+---
+
+## Troubleshooting
+
+1. **Script does not launch DRG**:
+   - Ensure Steam is running and DRG is installed.
+2. **Mouse wheel remapping does not work**:
+   - Check DRG's keybindings to ensure `,` and `.` are correctly mapped.
+3. **Script does not exit automatically**:
+   - Ensure DRG is closed properly. If the script does not exit, manually close it from the system tray.
+4. **Compilation issues**:
+   - The script was written for AutoHotkey v1.1.34, ensure that a version less than v2.0 is installed if not prompted.
+   - Ensure `Compile_exe.ahk`, `DRG_ScrollWheelMapZoom_Remap.ahk`, and `DRG.ico` are in the same directory.
+   - Ensure AutoHotkey is installed in `Program Files` and is accessible in your system's PATH.
+   - Alternatively, one may use the context menu option `Compile Script` when right-clicking `DRG_ScrollWheelMapZoom_Remap.ahk` to compile without the use of `Compile_exe.ahk`.
 
 ---
 

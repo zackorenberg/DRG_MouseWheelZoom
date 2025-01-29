@@ -1,4 +1,5 @@
-﻿#NoEnv  ; Recommended for performance and compatibility *allegedly*
+﻿#Requires AutoHotKey v1.1.33+ <2.0
+#NoEnv  ; Recommended for performance and compatibility *allegedly*
 SendMode Input  ; Recommended for new scripts *allegedly*
 SetWorkingDir %A_ScriptDir% ; No longer need DRG working directory
 
