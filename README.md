@@ -23,7 +23,8 @@ For the lone wolves not playing through Steam, there’s a standalone version (`
 - Automatically exits when DRG is closed.
 - Standalone version (`DRG_Remap_Only.ahk`) for non-Steam users or manual control.
 -  **Compilation Script**: Compile the AHK script into an executable (`DeepRockGalactic_ScrollWheelFix.exe`) with the official DRG icon for easy launching.
-  
+-  **AutoHotkey v2 Support**: Includes a version of each script compatible with AutoHotkey v2, located in the `AHKv2` directory. File names end with a `2` (e.g. `DRG_Remap_Only2.ahk`)
+   - **Note**: Compiling the v2 script requires `ahk2exe`, which is not included with AutoHotkey v2 by default. You can download it from the [ahk2exe repository](https://github.com/AutoHotkey/ahk2exe).
 ---
 
 ## Prerequisites
@@ -53,7 +54,7 @@ For the lone wolves not playing through Steam, there’s a standalone version (`
 If you want to create a standalone executable with the DRG icon for easy launching:
 1. Ensure you have `Compile_exe.ahk` and `DRG.ico` downloaded in the same directory as `DRG_ScrollWheelMapZoom_Remap.ahk`.
 2. Run `Compile_exe.ahk`. The script will compile `DRG_ScrollWheelMapZoom_Remap.ahk` into `DeepRockGalactic_ScrollWheelFix.exe` and embed the `DRG.ico` icon.
-4. Use the compiled `DeepRockGalactic_ScrollWheelFix.exe` to launch the script and/or game.
+3. Use the compiled `DeepRockGalactic_ScrollWheelFix.exe` to launch the script and/or game.
 
 ---
 
@@ -83,12 +84,15 @@ If you want to create a standalone executable with the DRG icon for easy launchi
    - Check DRG's keybindings to ensure `,` and `.` are correctly mapped.
 3. **Script does not exit automatically**:
    - Ensure DRG is closed properly. If the script does not exit, manually close it from the system tray.
-4. **Compilation issues**:
-   - The script was written for AutoHotkey v1.1.34, ensure that a version less than v2.0 is installed if not prompted.
+4. **Version or Syntax issues**:
+   - Ensure the correct script is used for the installed version of AutoHotkey.
+5. **Compilation issues**:
+   - The script was written for AutoHotkey v1.1.34, ensure that a version **less than v2.0** is installed if not prompted.
    - Ensure `Compile_exe.ahk`, `DRG_ScrollWheelMapZoom_Remap.ahk`, and `DRG.ico` are in the same directory.
    - Ensure AutoHotkey is installed in `Program Files` and is accessible in your system's PATH.
    - Alternatively, one may use the context menu option `Compile Script` when right-clicking `DRG_ScrollWheelMapZoom_Remap.ahk` to compile without the use of `Compile_exe.ahk`.
-
+		- **Note**: The `AHKv2/Compile_exe2.ahk` script requires a dual-install of both **v1.1** and **v2.0** versions of AutoHotkey. If this is not the case, you must manually compile `DRG_ScrollWheelMapZoom_Remap2.ahk` using `ahk2exe`, available from the [ahk2exe repository](https://github.com/AutoHotkey/ahk2exe).
+		- **Note**: Precompiled 64-bit binaries are available under **Releases**.
 ---
 
 ## Notes
